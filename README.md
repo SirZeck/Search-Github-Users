@@ -1,9 +1,8 @@
-## Starter Project
+# Search-Github-Users
 
-- css provided (global styles, styled components)
-- folders/files already setup
-- all imports included (warnings)
-- index.js for easier imports
+This is a project app that helps you search Github users and display detailed info about their Github profile and projects.
+
+---
 
 ## Styled Components
 
@@ -31,8 +30,8 @@ export default ReactComponent
 [React Icons - Main Docs](https://react-icons.github.io/react-icons/)
 
 ```jsx
-import { FiUsers, FiUserPlus } from 'react-icons/fi';
-<FiUsers className='nameOfTheClass'> </FiUsers>;
+import { FiUsers, FiUserPlus } from 'react-icons/fi'
+;<FiUsers className='nameOfTheClass'> </FiUsers>
 ```
 
 ## React Router Dom
