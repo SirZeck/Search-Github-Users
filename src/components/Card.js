@@ -7,7 +7,6 @@ const Card = () => {
   const {
     avatar_url,
     html_url,
-    gists_url,
     name,
     company,
     blog,
@@ -21,25 +20,23 @@ const Card = () => {
         <img src={avatar_url} alt={name} />
         <div>
           <h4>{name}</h4>
-          <p>@{twitter_username || 'n/a'}</p>
+          <p>@{twitter_username || 'john doe'}</p>
         </div>
         <a href={html_url}>follow</a>
-        <p className='bio'>{bio}</p>
-        <div className='links'>
-          <p>
-            <MdBusiness />
-            {company || 'n/a'}
-          </p>
-          <p>
-            <MdLocationOn />
-            {location || 'earth'}
-          </p>
-          {/* <a href={blog ? `https://${blog}` : gists_url}>
-            <MdLink />
-            {blog}
-          </a> */}
-        </div>
       </header>
+      <p className='bio'>{bio}</p>
+      <div className='links'>
+        <p>
+          <MdBusiness></MdBusiness> {company || 'n/a'}
+        </p>
+        <p>
+          <MdLocationOn></MdLocationOn> {location || 'earth'}
+        </p>
+        <a href={`https://${blog}`}>
+          <MdLink></MdLink>
+          {blog || 'n/a'}
+        </a>
+      </div>
     </Wrapper>
   )
 }
